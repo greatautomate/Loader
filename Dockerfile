@@ -33,8 +33,8 @@ RUN mkdir -p /tmp/ && \
 ENV GOOGLE_CHROME_DRIVER /usr/bin/chromedriver
 ENV GOOGLE_CHROME_BIN /usr/bin/google-chrome-stable
 
-# install node-js
-RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
+# install node-js (upgraded to version 20)
+RUN curl -sL https://deb.nodesource.com/setup_20.x | bash - && \
     apt-get install -y nodejs && \
     npm i -g npm
 
